@@ -38,7 +38,7 @@
     text-align: center;
     gap: 15px;
 }
-.main__spruce-h2 {
+.main__section1-h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -83,27 +83,58 @@
     font-size: 14px;
 }
 
+.main__section3-text {
+    color: #0c474b;
+    display: grid;
+    row-gap: 30px;
+    justify-items: center; 
+    text-align: center;
+    padding-top: 80px;
+
+    @media (min-width: 1728px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        padding-left: 300px;
+        padding-top: 150px;
+        max-width: 600px;
+    }
+}
 
 .main__section3 {
     background-color: #F0EBE5;
 
     @media (min-width: 1728px) {
-       grid-template-columns: 50% 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
 
-.main__section3-text {
-    color: #0c474b;
-    display: grid;
-    grid-template-columns: 1fr; 
-    justify-items: center; 
+.main__section3-h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 27px;
     text-align: center;
-    column-gap: 70px;
-    padding-top: 80px;
+    max-width: 700px;
+    padding-inline: 50px;
+
+    @media (min-width: 1728px) {
+        text-align: left;
+        padding-inline: 0px;
+    }
+
 }
 
 .img-creando-espacios {
     padding-top: 50px;
     width: 100vw;
+    display: block;
+
+    @media (min-width: 1728px) {
+        width: 50vw;
+        padding-top: 0px;
+    }
 }
 
