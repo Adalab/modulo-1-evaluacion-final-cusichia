@@ -1,12 +1,8 @@
 .header {
     background-image: url('../images/header.jpg');
-    background-position: center;
     width: 100vw;
-
-    @media (min-width: 900px) {
-        background-image: url('../images/header.jpg');
-        background-position: left;
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav {
@@ -20,6 +16,23 @@
     height: 24px;
     margin: 36px 43px 98px 33px;
     position: fixed;
+
+    @media (min-width: 1728px) {
+        display: none !important;
+    }
+}
+
+.header__menulist {
+    display: none;
+
+    @media (min-width: 1728px) {
+        display: flex;
+        gap: 30px;
+        color: #0c474b;
+        padding-top: 75px;
+        padding-left: 280px;
+        
+    }
 }
 
 .logo-container {
@@ -37,7 +50,7 @@
     text-align: center;
     gap: 80px;
     position: relative;
-    padding-top: 19px;
+    padding-top: 170px;
     padding-bottom: 70px;
 
     
@@ -49,6 +62,12 @@
         padding-left: 147px;
         padding-bottom: 200px;
         max-width: 430px;
+    }
+
+    @media (min-width: 1728px) {
+        padding-left: 280px;
+        max-width: 600px;
+        
     }
 }
 

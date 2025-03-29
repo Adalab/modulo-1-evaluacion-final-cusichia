@@ -1,6 +1,16 @@
 .footer {
     background-color: #0c474b;
     color: #b6c8c9;
+    padding-block: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-inline: 100px;
+       }
 }
 
 .footer__ul {
@@ -9,6 +19,10 @@
     line-height: 1.2;
     max-width: fit-content;
     padding-left: 200px;
+
+    @media (min-width: 900px) {
+       padding-left: 0;
+       }
 }
 
 .footer__a {
@@ -17,13 +31,6 @@
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
-}
-
-.footer {
-    padding-block: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .footer__rrss {
