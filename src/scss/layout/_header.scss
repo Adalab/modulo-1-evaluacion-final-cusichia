@@ -1,7 +1,12 @@
 .header {
     background-image: url('../images/header.jpg');
-    background-size: cover;
     background-position: center;
+    width: 100vw;
+
+    @media (min-width: 900px) {
+        background-image: url('../images/header.jpg');
+        background-position: left;
+    }
 }
 
 .nav {
@@ -17,6 +22,14 @@
     position: fixed;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
 .section__header {
     display: flex;
     flex-direction: column; 
@@ -26,6 +39,17 @@
     position: relative;
     padding-top: 19px;
     padding-bottom: 70px;
+
+    
+    @media (min-width: 900px) {
+        align-items: flex-start; 
+        text-align: left;
+        gap: 10px;
+        padding-top: 200px;
+        padding-left: 147px;
+        padding-bottom: 200px;
+        max-width: 430px;
+    }
 }
 
 .h1 {
