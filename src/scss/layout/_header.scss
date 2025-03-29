@@ -1,0 +1,39 @@
+.header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu {
+    width: 24px;
+    height: 24px;
+    margin: 36px 43px 98px 33px;
+    position: fixed;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    gap: 80px;
+    position: relative;
+    padding-top: 19px;
+    padding-bottom: 70px;
+}
+
+.header__button {
+    background-color: #0C474B;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
