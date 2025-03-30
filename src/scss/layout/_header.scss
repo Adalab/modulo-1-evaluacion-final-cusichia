@@ -42,6 +42,11 @@
 
 }
 
+.nav__logo {
+    position: absolute;
+    top: 25px;
+}
+
 .section__header {
     display: flex;
     flex-direction: column; 
@@ -82,5 +87,11 @@
     width: 175px;
     height: 50px;
     font-size: 20px;
+}
+
+.button-comprarAhora:hover {
+    background-color: #b6c8c9;
+    color: #0c474b;
+    border-radius: 50%;
 }
 
