@@ -3,8 +3,6 @@
     padding-top: 50px;
     background-color: #F0EBE5;
     color: #0c474b;
-    width: 100vw;
-
 }
 
 .section1__articleContainer {
@@ -70,8 +68,8 @@
     align-items: center; 
     text-align: center;
     gap: 10px;
-    width: 100vw;
 }
+
 .main__white-h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -108,7 +106,6 @@
 
 .main__section3 {
     background-color: #F0EBE5;
-    width: 100vw;
 
     @media (min-width: 1728px) {
         display: grid;
@@ -132,9 +129,14 @@
 
 }
 
-.img-creando-espacios {
+.img-creando-espacios{
+    width: 100%;
+    display: block;
+}
+
+.main__section3-img {
     padding-top: 50px;
-    width: 100vw;
+    width: 100%;
     display: block;
 
     @media (min-width: 1728px) {
